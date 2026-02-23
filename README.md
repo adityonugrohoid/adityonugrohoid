@@ -76,7 +76,7 @@ Two tracks grounded in 10+ years of network operations domain expertise. The **t
 **3-Step Interior Design Render Pipeline on Two Platforms**
 
 - **[Cloud Run](https://github.com/adityonugrohoid/google-cloud-ai-studio):** Streamlit + Vertex AI (gemini-2.0-flash-lite text, gemini-2.5-flash-image sketch/render), Docker + Cloud Build CI/CD. **[Live App](https://google-cloud-ai-studio-1099058340933.us-central1.run.app)**
-- **[Vercel](https://github.com/adityonugrohoid/google-ai-studio):** Next.js 14 + TypeScript, 3 API routes, gemini-3-pro-image-preview for near-exact sketch-to-render correspondence
+- **[Vercel](https://github.com/adityonugrohoid/google-ai-studio):** Next.js 14 + TypeScript, 3 API routes, gemini-3-pro-image-preview for near-exact sketch-to-render correspondence. **[Live App](https://adityolab-ai-studio.vercel.app/)**
 
 ### 8. [Observability & Agent Frameworks](https://github.com/adityonugrohoid/openclaw-dashboard)
 **OpenClaw Dashboard: AI Agent Observability**
@@ -105,25 +105,12 @@ Two tracks grounded in 10+ years of network operations domain expertise. The **t
 
 &nbsp;
 
-![Domain Expertise](https://img.shields.io/badge/Domain_Expertise-2d3436?style=for-the-badge)
-
-* **Telecom/Industrial AI Specialist:** 18+ years domain expertise in large-scale network optimization (10M+ subscribers) combined with hands-on AI/ML engineering
-* **Production Systems Focus:** Building AI/ML solutions that solve real operational problems in telecom and industrial domains
-* **Transferable Expertise:** Network optimization -> Industrial AI, Observability, Infrastructure systems
-
-&nbsp;
-
-![Available For](https://img.shields.io/badge/Available_For-2d3436?style=for-the-badge)
-
-* **Telecom/Industrial AI:** Domain-specific AI/ML solutions leveraging network optimization expertise
-* **Observability & APM:** Automated remediation and log analysis.
-* **Fintech & Trading:** Low-latency decision systems.
-* **Location:** Remote Preferred | Based in Indonesia (UTC+7)
+> I build AI systems shaped by 18 years of knowing what breaks on live networks.
+> Remote | Indonesia (UTC+7)
 
 &nbsp;
 
 ![Connect](https://img.shields.io/badge/Connect-2d3436?style=for-the-badge)
 
-* **Website:** [adityonugrohoid.github.io](https://adityonugrohoid.github.io)
 * **LinkedIn:** [linkedin.com/in/adityonugrohoid](https://linkedin.com/in/adityonugrohoid)
 * **Email:** [adityo.nugroho.id@gmail.com](mailto:adityo.nugroho.id@gmail.com)
