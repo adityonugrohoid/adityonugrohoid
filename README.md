@@ -4,6 +4,10 @@
 
 > Led network optimization at Huawei for 18 years. Pivoted. Now I design and deploy AI systems shaped by decades of knowing what breaks on live networks, from multi-agent RAG pipelines to LLM observability platforms and telecom-domain ML at scale.
 
+![Technical Stack](https://img.shields.io/badge/Technical_Stack-2d3436?style=for-the-badge)
+
+![Python](https://img.shields.io/badge/Python-2d3436?style=flat-square&logo=python&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-2d3436?style=flat-square&logo=fastapi&logoColor=white) ![Streamlit](https://img.shields.io/badge/Streamlit-2d3436?style=flat-square&logo=streamlit&logoColor=white) ![Next.js](https://img.shields.io/badge/Next.js-2d3436?style=flat-square&logo=nextdotjs&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-2d3436?style=flat-square&logo=typescript&logoColor=white) ![LangChain](https://img.shields.io/badge/LangChain-2d3436?style=flat-square&logo=langchain&logoColor=white) ![Ollama](https://img.shields.io/badge/Ollama-2d3436?style=flat-square&logo=ollama&logoColor=white) ![Google Gemini](https://img.shields.io/badge/Gemini-2d3436?style=flat-square&logo=googlegemini&logoColor=white) ![scikit--learn](https://img.shields.io/badge/scikit--learn-2d3436?style=flat-square&logo=scikitlearn&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2d3436?style=flat-square&logo=docker&logoColor=white) ![Terraform](https://img.shields.io/badge/Terraform-2d3436?style=flat-square&logo=terraform&logoColor=white) ![Google Cloud](https://img.shields.io/badge/Google_Cloud-2d3436?style=flat-square&logo=googlecloud&logoColor=white) ![Vercel](https://img.shields.io/badge/Vercel-2d3436?style=flat-square&logo=vercel&logoColor=white) ![Nginx](https://img.shields.io/badge/Nginx-2d3436?style=flat-square&logo=nginx&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2d3436?style=flat-square&logo=githubactions&logoColor=white)
+
 &nbsp;
 
 ![Featured Projects](https://img.shields.io/badge/Featured_Projects-2d3436?style=for-the-badge)
@@ -89,12 +93,6 @@ Two tracks grounded in 10+ years of network operations domain expertise. The **t
 - **[Trailing Edge](https://github.com/adityonugrohoid/trailing-edge):** Async Python trading bot for Binance -- dynamic trailing take-profit, regime detection (BASE/QUOTE auto-switch), Donchian channel hard stop, Ed25519 auth, 24/7 systemd with Telegram alerts
 - **[RATU Suite](https://github.com/search?q=user%3Aadityonugrohoid+ratu-fix-bot+OR+ratu-rest-api+OR+ratu-onchain-monitor+OR+ratu-moon-radar&type=repositories):** FIX 4.4 market making (3 sessions), REST market analytics (7 endpoints), on-chain whale tracking (6 chains), DEX pair scanning (4 chains)
 - **[Binance Colo Research](https://github.com/adityonugrohoid/binance-colo-research):** Singapore vs Tokyo latency testing -- **4.4x improvement** from Tokyo VPS (307ms vs 1,344ms avg), 80 concurrent workers, interactive HTML reports
-
-&nbsp;
-
-![Technical Stack](https://img.shields.io/badge/Technical_Stack-2d3436?style=for-the-badge)
-
-![Python](https://img.shields.io/badge/Python-2d3436?style=flat-square&logo=python&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-2d3436?style=flat-square&logo=fastapi&logoColor=white) ![Streamlit](https://img.shields.io/badge/Streamlit-2d3436?style=flat-square&logo=streamlit&logoColor=white) ![Next.js](https://img.shields.io/badge/Next.js-2d3436?style=flat-square&logo=nextdotjs&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-2d3436?style=flat-square&logo=typescript&logoColor=white) ![LangChain](https://img.shields.io/badge/LangChain-2d3436?style=flat-square&logo=langchain&logoColor=white) ![Ollama](https://img.shields.io/badge/Ollama-2d3436?style=flat-square&logo=ollama&logoColor=white) ![Google Gemini](https://img.shields.io/badge/Gemini-2d3436?style=flat-square&logo=googlegemini&logoColor=white) ![scikit--learn](https://img.shields.io/badge/scikit--learn-2d3436?style=flat-square&logo=scikitlearn&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2d3436?style=flat-square&logo=docker&logoColor=white) ![Terraform](https://img.shields.io/badge/Terraform-2d3436?style=flat-square&logo=terraform&logoColor=white) ![Google Cloud](https://img.shields.io/badge/Google_Cloud-2d3436?style=flat-square&logo=googlecloud&logoColor=white) ![Vercel](https://img.shields.io/badge/Vercel-2d3436?style=flat-square&logo=vercel&logoColor=white) ![Nginx](https://img.shields.io/badge/Nginx-2d3436?style=flat-square&logo=nginx&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2d3436?style=flat-square&logo=githubactions&logoColor=white)
 
 &nbsp;
 
