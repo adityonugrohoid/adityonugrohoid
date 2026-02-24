@@ -94,24 +94,7 @@ Two tracks grounded in 10+ years of network operations domain expertise. The **t
 
 ![Technical Stack](https://img.shields.io/badge/Technical_Stack-2d3436?style=for-the-badge)
 
-![Python](https://img.shields.io/badge/Python-2d3436?style=flat-square&logo=python&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-2d3436?style=flat-square&logo=fastapi&logoColor=white)
-![Streamlit](https://img.shields.io/badge/Streamlit-2d3436?style=flat-square&logo=streamlit&logoColor=white)
-![Next.js](https://img.shields.io/badge/Next.js-2d3436?style=flat-square&logo=nextdotjs&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-2d3436?style=flat-square&logo=typescript&logoColor=white)
-![LangChain](https://img.shields.io/badge/LangChain-2d3436?style=flat-square&logo=langchain&logoColor=white)
-
-![Ollama](https://img.shields.io/badge/Ollama-2d3436?style=flat-square&logo=ollama&logoColor=white)
-![Google Gemini](https://img.shields.io/badge/Gemini-2d3436?style=flat-square&logo=googlegemini&logoColor=white)
-![scikit--learn](https://img.shields.io/badge/scikit--learn-2d3436?style=flat-square&logo=scikitlearn&logoColor=white)
-
-![Docker](https://img.shields.io/badge/Docker-2d3436?style=flat-square&logo=docker&logoColor=white)
-![Terraform](https://img.shields.io/badge/Terraform-2d3436?style=flat-square&logo=terraform&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-2d3436?style=flat-square&logo=amazonwebservices&logoColor=white)
-![Google Cloud](https://img.shields.io/badge/Google_Cloud-2d3436?style=flat-square&logo=googlecloud&logoColor=white)
-![Vercel](https://img.shields.io/badge/Vercel-2d3436?style=flat-square&logo=vercel&logoColor=white)
-![Nginx](https://img.shields.io/badge/Nginx-2d3436?style=flat-square&logo=nginx&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2d3436?style=flat-square&logo=githubactions&logoColor=white)
+![Python](https://img.shields.io/badge/Python-2d3436?style=flat-square&logo=python&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-2d3436?style=flat-square&logo=fastapi&logoColor=white) ![Streamlit](https://img.shields.io/badge/Streamlit-2d3436?style=flat-square&logo=streamlit&logoColor=white) ![Next.js](https://img.shields.io/badge/Next.js-2d3436?style=flat-square&logo=nextdotjs&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-2d3436?style=flat-square&logo=typescript&logoColor=white) ![LangChain](https://img.shields.io/badge/LangChain-2d3436?style=flat-square&logo=langchain&logoColor=white) ![Ollama](https://img.shields.io/badge/Ollama-2d3436?style=flat-square&logo=ollama&logoColor=white) ![Google Gemini](https://img.shields.io/badge/Gemini-2d3436?style=flat-square&logo=googlegemini&logoColor=white) ![scikit--learn](https://img.shields.io/badge/scikit--learn-2d3436?style=flat-square&logo=scikitlearn&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2d3436?style=flat-square&logo=docker&logoColor=white) ![Terraform](https://img.shields.io/badge/Terraform-2d3436?style=flat-square&logo=terraform&logoColor=white) ![Google Cloud](https://img.shields.io/badge/Google_Cloud-2d3436?style=flat-square&logo=googlecloud&logoColor=white) ![Vercel](https://img.shields.io/badge/Vercel-2d3436?style=flat-square&logo=vercel&logoColor=white) ![Nginx](https://img.shields.io/badge/Nginx-2d3436?style=flat-square&logo=nginx&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2d3436?style=flat-square&logo=githubactions&logoColor=white)
 
 &nbsp;
 
