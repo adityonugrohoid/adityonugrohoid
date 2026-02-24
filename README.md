@@ -94,14 +94,27 @@ Two tracks grounded in 10+ years of network operations domain expertise. The **t
 
 ![Technical Stack](https://img.shields.io/badge/Technical_Stack-2d3436?style=for-the-badge)
 
-| Domain | Technologies |
-| :--- | :--- |
-| **Programming & Frameworks** | Python, Python Async (asyncio), Streamlit, FastAPI, LangChain, Pandas |
-| **AI & Machine Learning** | Google Gemini 2.0 (Flash/Lite/Pro), Vertex AI, RAG, XGBoost, LightGBM, scikit-learn, SHAP, Agentic Patterns, Function Calling, Prompt Engineering |
-| **MLOps & Data Engineering** | Reproducible Pipelines, Schema Validation, Model Evaluation, Parquet, Synthetic Data (SDV), Text Embeddings, Batch Prediction, CLI Automation, SQL |
-| **Cloud & Infrastructure** | Google Cloud Run, Docker, Artifact Registry, Linux VPS, Systemd, CI/CD |
-| **Protocols & APIs** | REST, WebSockets, FIX 4.4, JSON-RPC, GraphQL |
-| **Tools** | UV Manager, Pytest, Ruff, Git/GitHub, Tableau |
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white)
+
+![Ollama](https://img.shields.io/badge/Ollama-000000?style=flat-square&logo=ollama&logoColor=white)
+![Google Gemini](https://img.shields.io/badge/Gemini-8E75B2?style=flat-square&logo=googlegemini&logoColor=white)
+![ChromaDB](https://img.shields.io/badge/ChromaDB-4A154B?style=flat-square)
+![Qdrant](https://img.shields.io/badge/Qdrant-DC244C?style=flat-square)
+![XGBoost](https://img.shields.io/badge/XGBoost-337AB7?style=flat-square)
+![scikit--learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white)
+
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Terraform](https://img.shields.io/badge/Terraform-844FBA?style=flat-square&logo=terraform&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white)
+![Google Cloud](https://img.shields.io/badge/Google_Cloud-4285F4?style=flat-square&logo=googlecloud&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
+![Nginx](https://img.shields.io/badge/Nginx-009639?style=flat-square&logo=nginx&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
 
 &nbsp;
 
