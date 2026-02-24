@@ -54,16 +54,16 @@ A three-component AI system designed to reduce Mean Time To Repair (MTTR) in Net
 
 Two tracks grounded in 10+ years of network operations domain expertise. The **telecom-ml-framework** provides 6 use case specifications with problem framing, data requirements, and model architectures. The **telecom-ml-portfolio** links 6 independent, end-to-end implementations with domain-informed synthetic data generators embedding real telecom physics.
 
-**Implementation Results ([telecom-ml-portfolio](https://github.com/adityonugrohoid/telecom-ml-portfolio)):**
+- **Implementation Results ([telecom-ml-portfolio](https://github.com/adityonugrohoid/telecom-ml-portfolio)):**
 
-| Use Case | ML Type | Algorithm | Result |
-|:---------|:--------|:----------|:-------|
-| Churn Prediction | Binary Classification | XGBoost | AUROC: 0.86 |
-| Root Cause Analysis | Multi-class Classification | XGBoost | Acc@1: 0.91 |
-| Anomaly Detection | Unsupervised | Isolation Forest | F1: 0.70 |
-| QoE Prediction | Regression | LightGBM | RMSE: 0.45 |
-| Capacity Forecasting | Time-Series | LightGBM+Prophet | MAPE: 14.5% |
-| Network Optimization | Reinforcement Learning | Q-Learning | +61% vs random |
+  | Use Case | ML Type | Algorithm | Result |
+  |:---------|:--------|:----------|:-------|
+  | Churn Prediction | Binary Classification | XGBoost | AUROC: 0.86 |
+  | Root Cause Analysis | Multi-class Classification | XGBoost | Acc@1: 0.91 |
+  | Anomaly Detection | Unsupervised | Isolation Forest | F1: 0.70 |
+  | QoE Prediction | Regression | LightGBM | RMSE: 0.45 |
+  | Capacity Forecasting | Time-Series | LightGBM+Prophet | MAPE: 14.5% |
+  | Network Optimization | Reinforcement Learning | Q-Learning | +61% vs random |
 
 - **[Telecom ML Framework](https://github.com/adityonugrohoid/telecom-ml-framework):** 6 production-ready ML project templates with complete specs, domain-informed data generator patterns, unified standards (SHAP-compatible versions, CI/CD, pytest)
 - **Key Differentiator:** Telecom domain knowledge embedded at every stage -- synthetic data uses physics-based models (SINR, Shannon capacity, congestion patterns), SHAP interpretability connects model outputs to operational decisions
