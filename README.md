@@ -103,9 +103,6 @@ Two tracks grounded in 10+ years of network operations domain expertise. The **t
 
 ![Ollama](https://img.shields.io/badge/Ollama-2d3436?style=flat-square&logo=ollama&logoColor=white)
 ![Google Gemini](https://img.shields.io/badge/Gemini-2d3436?style=flat-square&logo=googlegemini&logoColor=white)
-![ChromaDB](https://img.shields.io/badge/ChromaDB-2d3436?style=flat-square)
-![Qdrant](https://img.shields.io/badge/Qdrant-2d3436?style=flat-square)
-![XGBoost](https://img.shields.io/badge/XGBoost-2d3436?style=flat-square)
 ![scikit--learn](https://img.shields.io/badge/scikit--learn-2d3436?style=flat-square&logo=scikitlearn&logoColor=white)
 
 ![Docker](https://img.shields.io/badge/Docker-2d3436?style=flat-square&logo=docker&logoColor=white)
