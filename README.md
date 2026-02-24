@@ -13,7 +13,7 @@
 ### 1. [AgentLens - Agentic RAG Portfolio](https://agentlens.adityonugroho.com/) LIVE
 **Multi-Agent RAG System Built From First Principles**
 
-A multi-agent RAG system built from scratch -- no LangGraph, LlamaIndex, CrewAI, or AutoGen. Each version introduced progressively deeper autonomy, culminating in AgentLens with a 6-layer observation model and dual-tab pipeline debugger (live NDJSON streaming + post-mortem trace). Includes a 25-page documentation site.
+A multi-agent RAG system built from scratch - no LangGraph, LlamaIndex, CrewAI, or AutoGen. Each version introduced progressively deeper autonomy, culminating in AgentLens with a 6-layer observation model and dual-tab pipeline debugger (live NDJSON streaming + post-mortem trace). Includes a 25-page documentation site.
 
 - **Multi-Agent Pipeline:** ReAct reasoning loop with hybrid retrieval (vector + BM25), two-agent orchestrator with Quality Judge that evaluates chunks and retries with feedback, per-role model selection across 4 pipeline stages
 - **Evolution:** v1 (25 tests) -> v2 (69 tests) -> v3 (208 tests) -> AgentLens (263 tests), each version adding deeper autonomy
@@ -24,7 +24,7 @@ A multi-agent RAG system built from scratch -- no LangGraph, LlamaIndex, CrewAI,
 ### 2. [pAIjo RAG](https://github.com/adityonugrohoid/pAIjo-rag)
 **Islamic Knowledge Retrieval for the Indonesian Muslim Community**
 
-Retrieval backbone for pAIjo -- a WhatsApp/Telegram-based Islamic knowledge assistant. Collaboration with [Ainun Najib](https://github.com/ainunnajib) (project lead, Singapore-based data platform & civic tech leader). The core design constraint: fabricating or misattributing Islamic quotes is a critical failure mode, so RAG ensures every response is grounded in verified, curated content from trusted Islamic scholars.
+Retrieval backbone for pAIjo - a WhatsApp/Telegram-based Islamic knowledge assistant. Collaboration with [Ainun Najib](https://github.com/ainunnajib) (project lead, Singapore-based data platform & civic tech leader). The core design constraint: fabricating or misattributing Islamic quotes is a critical failure mode, so RAG ensures every response is grounded in verified, curated content from trusted Islamic scholars.
 
 - **Architecture:** FastAPI server -> OpenAI embeddings -> Qdrant vector database (68 curated chunks across 3 categories: Fiqih & Traditions, Ramadan Guidance, General Islamic Q&A)
 - **Performance:** ~100ms query latency, 25 concurrent connections stable, 100% retrieval coverage verified
@@ -66,13 +66,13 @@ Two tracks grounded in 10+ years of network operations domain expertise. The **t
   | Network Optimization | Reinforcement Learning | Q-Learning | +61% vs random |
 
 - **[Telecom ML Framework](https://github.com/adityonugrohoid/telecom-ml-framework):** 6 production-ready ML project templates with complete specs, domain-informed data generator patterns, unified standards (SHAP-compatible versions, CI/CD, pytest)
-- **Key Differentiator:** Telecom domain knowledge embedded at every stage -- synthetic data uses physics-based models (SINR, Shannon capacity, congestion patterns), SHAP interpretability connects model outputs to operational decisions
+- **Key Differentiator:** Telecom domain knowledge embedded at every stage - synthetic data uses physics-based models (SINR, Shannon capacity, congestion patterns), SHAP interpretability connects model outputs to operational decisions
 
 ### 6. [Telecom Digital Twin + MLOps Pipeline](https://github.com/search?q=user%3Aadityonugrohoid+telecom-digital-twin+OR+telecom-qoe-analytics&type=repositories)
 **End-to-End MLOps: Synthetic Generation -> Model Training -> Strategic Insights**
 
 - **[Digital Twin](https://github.com/adityonugrohoid/telecom-digital-twin):** Deterministic multi-table generator producing **50K users, 2K cells, ~5.6M sessions** with cascade-based seeding for bit-exact reproducibility, referential integrity validation, and Parquet columnar storage
-- **[QoE Analytics](https://github.com/adityonugrohoid/telecom-qoe-analytics):** Six-phase pipeline -- **R²=0.7247** (XGBoost), **ROC-AUC=0.9645** (LightGBM), SHAP interpretability, Cohen's d effect size analysis (d=-2.12 for congestion on QoE)
+- **[QoE Analytics](https://github.com/adityonugrohoid/telecom-qoe-analytics):** Six-phase pipeline - **R²=0.7247** (XGBoost), **ROC-AUC=0.9645** (LightGBM), SHAP interpretability, Cohen's d effect size analysis (d=-2.12 for congestion on QoE)
 
 ### 7. [Google GenAI Platform](https://github.com/search?q=user%3Aadityonugrohoid+google-cloud-ai-studio+OR+google-ai-studio&type=repositories) LIVE
 **3-Step Interior Design Render Pipeline on Two Platforms**
@@ -88,9 +88,9 @@ Two tracks grounded in 10+ years of network operations domain expertise. The **t
 ### 9. [Trading & Fintech](https://github.com/search?q=user%3Aadityonugrohoid+trailing-edge+OR+ratu-fix-bot+OR+ratu-rest-api+OR+ratu-onchain-monitor+OR+ratu-moon-radar+OR+binance-colo-research&type=repositories)
 **Algorithmic Trading + Multi-Chain Analytics + Latency Research**
 
-- **[Trailing Edge](https://github.com/adityonugrohoid/trailing-edge):** Async Python trading bot for Binance -- dynamic trailing take-profit, regime detection (BASE/QUOTE auto-switch), Donchian channel hard stop, Ed25519 auth, 24/7 systemd with Telegram alerts
+- **[Trailing Edge](https://github.com/adityonugrohoid/trailing-edge):** Async Python trading bot for Binance - dynamic trailing take-profit, regime detection (BASE/QUOTE auto-switch), Donchian channel hard stop, Ed25519 auth, 24/7 systemd with Telegram alerts
 - **[RATU Suite](https://github.com/search?q=user%3Aadityonugrohoid+ratu-fix-bot+OR+ratu-rest-api+OR+ratu-onchain-monitor+OR+ratu-moon-radar&type=repositories):** FIX 4.4 market making (3 sessions), REST market analytics (7 endpoints), on-chain whale tracking (6 chains), DEX pair scanning (4 chains)
-- **[Binance Colo Research](https://github.com/adityonugrohoid/binance-colo-research):** Singapore vs Tokyo latency testing -- **4.4x improvement** from Tokyo VPS (307ms vs 1,344ms avg), 80 concurrent workers, interactive HTML reports
+- **[Binance Colo Research](https://github.com/adityonugrohoid/binance-colo-research):** Singapore vs Tokyo latency testing - **4.4x improvement** from Tokyo VPS (307ms vs 1,344ms avg), 80 concurrent workers, interactive HTML reports
 
 &nbsp;
 
