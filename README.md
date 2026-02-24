@@ -105,11 +105,6 @@ Two tracks grounded in 10+ years of network operations domain expertise. The **t
 
 &nbsp;
 
-> I build AI systems shaped by 18 years of knowing what breaks on live networks.
-> Remote | Indonesia (UTC+7)
-
-&nbsp;
-
 ![Connect](https://img.shields.io/badge/Connect-2d3436?style=for-the-badge)
 
 * **LinkedIn:** [linkedin.com/in/adityonugrohoid](https://linkedin.com/in/adityonugrohoid)
