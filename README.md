@@ -92,6 +92,15 @@ Two tracks grounded in 10+ years of network operations domain expertise. The **t
 - **[RATU Suite](https://github.com/search?q=user%3Aadityonugrohoid+ratu-fix-bot+OR+ratu-rest-api+OR+ratu-onchain-monitor+OR+ratu-moon-radar&type=repositories):** FIX 4.4 market making (3 sessions), REST market analytics (7 endpoints), on-chain whale tracking (6 chains), DEX pair scanning (4 chains)
 - **[Binance Colo Research](https://github.com/adityonugrohoid/binance-colo-research):** Singapore vs Tokyo latency testing - **4.4x improvement** from Tokyo VPS (307ms vs 1,344ms avg), 80 concurrent workers, interactive HTML reports
 
+### 10. [VPS Deploy Playbook](https://github.com/adityonugrohoid/vps-deploy-playbook)
+**Battle-Tested Playbook for Multi-App VPS Deployment**
+
+> Deploy 21+ containerized apps on a single VPS with Docker — from zero to production.
+
+- **Architecture:** Docker Compose, Nginx Reverse Proxy, Bash, SSH Automation
+- **Key Win:** Image layering strategy (500MB base / 2.5GB ML tier) reducing pull bandwidth by 5x across 15 services
+- **Covers:** VPS hardening, Docker networking, subdomain routing, selective deployments, monitoring & alerting
+
 &nbsp;
 
 ![Connect](https://img.shields.io/badge/Connect-2d3436?style=for-the-badge)
