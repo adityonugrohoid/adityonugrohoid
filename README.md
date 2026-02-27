@@ -95,7 +95,7 @@ Two tracks grounded in 10+ years of network operations domain expertise. The **t
 ### 10. [VPS Deploy Playbook](https://github.com/adityonugrohoid/vps-deploy-playbook)
 **Battle-Tested Playbook for Multi-App VPS Deployment**
 
-> Deploy 21+ containerized apps on a single VPS with Docker — from zero to production.
+Deploy 21+ containerized apps on a single VPS with Docker — from zero to production.
 
 - **Architecture:** Docker Compose, Nginx Reverse Proxy, Bash, SSH Automation
 - **Key Win:** Image layering strategy (500MB base / 2.5GB ML tier) reducing pull bandwidth by 5x across 15 services
