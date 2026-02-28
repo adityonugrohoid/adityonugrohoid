@@ -1,6 +1,6 @@
 # Hi, I'm Adityo Nugroho
 
-**AI Solutions Engineer - Telecom & Industrial AI | Ex-Deputy GM, Huawei | Agentic RAG, Multi-Agent Systems, LLM Observability**
+**AI Solutions Engineer | Telecom & Industrial AI | Agentic RAG, Multi-Agent Systems, LLM Observability**
 
 > Led network optimization at Huawei for 18 years. Pivoted. Now I design and deploy AI systems shaped by decades of knowing what breaks on live networks, from multi-agent RAG pipelines to LLM observability platforms and telecom-domain ML at scale.
 
