@@ -79,7 +79,7 @@ Three-component AI system for reducing MTTR in NOC workflows, each mapping to on
 - **[NOC-Oracle](https://github.com/adityonugrohoid/noc-oracle):** RAG with hybrid search (vector + regex keyword boosting) for exact error code matching, hallucination trap toggle showing ungrounded vs. RAG-verified answers
 - **[Net-Ops Agent](https://github.com/adityonugrohoid/net-ops-agent):** Reasoning-action separation with human-in-the-loop approval gate, deterministic function calling from pre-defined toolbelt
 
-### 9. [Telecom ML](https://github.com/search?q=user%3Aadityonugrohoid+telecom-ml-portfolio+OR+telecom-ml-framework+OR+telecom-churn+OR+telecom-root-cause+OR+telecom-anomaly+OR+telecom-qoe-prediction+OR+telecom-capacity+OR+telecom-network-optimization&type=repositories)
+### 9. [Telecom ML](https://github.com/search?q=user%3Aadityonugrohoid+telecom-ml+OR+telecom-churn+OR+telecom-root-cause+OR+telecom-anomaly+OR+telecom-capacity+OR+telecom-network-optimization&type=repositories)
 **6 End-to-End ML Use Cases + Framework**
 
 Six independent implementations with domain-informed synthetic data generators embedding real telecom physics (SINR, Shannon capacity, congestion patterns), backed by 10+ years of network operations expertise. SHAP interpretability in every project.
@@ -111,7 +111,7 @@ Deterministic multi-table generator (50K users, 2K cells, ~5.6M sessions) with c
 
 - OpenClaw Dashboard: zero-build SPA (FastAPI + Tailwind CDN + Alpine.js) with 7 views covering agent sessions, configuration, security audit, and system resources, purpose-built with intelligent data filtering and glassmorphism UI
 
-### 13. [Trading & Fintech](https://github.com/search?q=user%3Aadityonugrohoid+polymarket-agent+OR+trailing-edge+OR+ratu-fix-bot+OR+ratu-rest-api+OR+ratu-onchain-monitor+OR+ratu-moon-radar+OR+binance-colo-research&type=repositories)
+### 13. [Trading & Fintech](https://github.com/search?q=user%3Aadityonugrohoid+polymarket-agent+OR+trailing-edge+OR+ratu+OR+binance-colo-research&type=repositories)
 
 - 7 repos: autonomous LLM trading agent with 3-model council and 55 tests, async Binance bot with Ed25519 auth and systemd deployment, FIX 4.4 market making (3 sessions), REST analytics (7 endpoints), on-chain whale tracking (6 chains), DEX pair scanning (4 chains), co-location latency research (4.4x improvement from Tokyo VPS)
 
