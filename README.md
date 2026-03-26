@@ -4,8 +4,6 @@
 
 > Led network optimization at Huawei for 18 years. Pivoted. Now I design and deploy AI systems shaped by decades of knowing what breaks on live networks, from multi-agent RAG pipelines to LLM observability platforms and telecom-domain ML at scale.
 
-![Stack](https://skillicons.dev/icons?i=python,pytorch,sklearn,fastapi,docker,kubernetes,terraform,aws,gcp&theme=dark&perline=9)
-
 &nbsp;
 
 ![Featured Projects](https://img.shields.io/badge/Featured_Projects-2d3436?style=for-the-badge)
