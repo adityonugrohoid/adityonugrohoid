@@ -1,8 +1,8 @@
 # Hi, I'm Adityo Nugroho
 
-**AI Solutions Engineer | Telecom & Industrial AI | Agentic RAG, Multi-Agent Systems, LLM Observability**
+**AI Engineer - Fine-Tuning, RAG, Computer Vision, ML Infrastructure**
 
-> Led network optimization at Huawei for 18 years. Pivoted. Now I design and deploy AI systems shaped by decades of knowing what breaks on live networks, from multi-agent RAG pipelines to LLM observability platforms and telecom-domain ML at scale.
+> 18 years optimizing telecom networks at Huawei. Now I build AI systems shaped by knowing what breaks on live networks - from fine-tuning 270M models that beat 120B on tool calling, to multi-agent RAG with no framework dependencies, to scale-to-zero GPU inference on Kubernetes.
 
 &nbsp;
 
