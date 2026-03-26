@@ -4,7 +4,7 @@
 
 > Led network optimization at Huawei for 18 years. Pivoted. Now I design and deploy AI systems shaped by decades of knowing what breaks on live networks, from multi-agent RAG pipelines to LLM observability platforms and telecom-domain ML at scale.
 
-![Python](https://img.shields.io/badge/Python-2d3436?style=flat-square&logo=python&logoColor=white) ![PyTorch](https://img.shields.io/badge/PyTorch-2d3436?style=flat-square&logo=pytorch&logoColor=white) ![scikit--learn](https://img.shields.io/badge/scikit--learn-2d3436?style=flat-square&logo=scikitlearn&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-2d3436?style=flat-square&logo=fastapi&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2d3436?style=flat-square&logo=docker&logoColor=white) ![Kubernetes](https://img.shields.io/badge/Kubernetes-2d3436?style=flat-square&logo=kubernetes&logoColor=white) ![Terraform](https://img.shields.io/badge/Terraform-2d3436?style=flat-square&logo=terraform&logoColor=white) ![AWS](https://img.shields.io/badge/AWS-2d3436?style=flat-square&logo=amazonwebservices&logoColor=white) ![Google Cloud](https://img.shields.io/badge/Google_Cloud-2d3436?style=flat-square&logo=googlecloud&logoColor=white)
+![Stack](https://skillicons.dev/icons?i=python,pytorch,sklearn,fastapi,docker,kubernetes,terraform,aws,gcp&theme=dark&perline=9)
 
 &nbsp;
 
