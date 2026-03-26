@@ -45,8 +45,6 @@ Progressive RAG evolution across 6 phases: from standalone Docker Compose to mul
 - **Infrastructure:** 7 containers on a single EC2 t3.small via Terraform IaC, Cloudflare SSL, nginx routing — consolidated from 21 containers after retiring v1/v2/v3 stacks
 - **Live:** [agentlens.adityonugroho.com](https://agentlens.adityonugroho.com/)
 
----
-
 &nbsp;
 
 ![Fine-Tuning, RAG & Research](https://img.shields.io/badge/Fine--Tuning,_RAG_%26_Research-2d3436?style=for-the-badge)
@@ -88,8 +86,6 @@ Enterprise RAG with multi-provider LLM support and PII redaction, plus a phased 
 - **[Ollama Multi-LLM Server](https://github.com/adityonugrohoid/ollama-multi-llm-server):** Multi-model hot-swap, side-by-side comparison, 3-tier model selection
 - **[Ollama Runtime](https://github.com/adityonugrohoid/ollama-runtime):** Shared GPU runtime on dedicated Docker network, centralized model storage, lifecycle-independent from downstream phases
 
----
-
 &nbsp;
 
 ![Telecom AI/ML](https://img.shields.io/badge/Telecom_AI%2FML-2d3436?style=for-the-badge)
@@ -129,8 +125,6 @@ Deterministic multi-table generator (50K users, 2K cells, ~5.6M sessions) with c
 - **[Digital Twin](https://github.com/adityonugrohoid/telecom-digital-twin):** 7-step pipeline with referential integrity validation, Parquet columnar storage, configurable QoE noise (R-squared ~0.72-0.85)
 - **[QoE Analytics](https://github.com/adityonugrohoid/telecom-qoe-analytics):** R-squared=0.7247 (XGBoost), ROC-AUC=0.9645 (LightGBM), Cohen's d=-2.12 congestion effect, Optuna + SHAP
 
----
-
 &nbsp;
 
 ![Other Work](https://img.shields.io/badge/Other_Work-2d3436?style=for-the-badge)
@@ -153,8 +147,6 @@ Deterministic multi-table generator (50K users, 2K cells, ~5.6M sessions) with c
 ### 15. [VPS Deploy Playbook](https://github.com/adityonugrohoid/vps-deploy-playbook)
 
 - 8-chapter production playbook: 21+ containers on one VPS, 2-tier image layering (7x disk reduction), shared ChromaDB saving ~10GB RAM, 30-second selective deploys, full lifecycle from SSH hardening through CI/CD with GitHub Actions
-
----
 
 &nbsp;
 
