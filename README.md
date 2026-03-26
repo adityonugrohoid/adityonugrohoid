@@ -36,8 +36,8 @@ Production GPU inference platform that costs $0 when idle. Two-layer autoscaling
 Progressive RAG evolution across 6 phases: from standalone Docker Compose to multi-agent orchestration to AWS serverless, with the same 4-layer token-budgeted PromptAssembler preserved identically across every deployment. No LangGraph, LlamaIndex, CrewAI, or AutoGen. The final phase features two autonomous agents coordinating via retry feedback loops with a 98 KB zero-dependency pipeline debugger.
 
 - **Multi-Agent Pipeline:** ReAct reasoning loop with hybrid retrieval (vector + BM25), Quality Judge that evaluates chunks and retries with targeted feedback, per-role model selection across 4 pipeline stages
-- **Evolution:** v0 (25 tests, Docker Compose, 7 services) -> v1 (section-aware chunking) -> v2 (69 tests, agentic ReAct) -> v3 (multi-agent with inter-agent feedback) -> AgentLens (5-service microservices, NDJSON streaming debugger)
-- **Infrastructure:** 21 containers on a single EC2 m7i-flex.large via Terraform IaC, 4 subdomains with Cloudflare SSL, nginx routing. Serverless variant on Bedrock + Lambda + Aurora pgvector at ~$6/month
+- **Evolution:** v0 (25 tests, Docker Compose, 7 services) -> v1 (section-aware chunking) -> v2 (69 tests, agentic ReAct) -> v3 (multi-agent with inter-agent feedback) -> AgentLens (263 tests, 5-service microservices, NDJSON streaming debugger)
+- **Infrastructure:** 7 containers on a single EC2 t3.small via Terraform IaC, Cloudflare SSL, nginx routing — consolidated from 21 containers after retiring v1/v2/v3 stacks
 - **Live:** [agentlens.adityonugroho.com](https://agentlens.adityonugroho.com/)
 
 &nbsp;
