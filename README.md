@@ -45,7 +45,7 @@ Progressive RAG evolution across 6 phases: from standalone Docker Compose to mul
 - **Infrastructure:** 7 containers on a single EC2 t3.small via Terraform IaC, Cloudflare SSL, nginx routing — consolidated from 21 containers after retiring v1/v2/v3 stacks
 - **Live:** [agentlens.adityonugroho.com](https://agentlens.adityonugroho.com/)
 
-### 5. [Telecom ML](https://github.com/search?q=user%3Aadityonugrohoid+telecom-ml+OR+telecom-churn+OR+telecom-root-cause+OR+telecom-anomaly+OR+telecom-capacity+OR+telecom-network-optimization&type=repositories)
+### 5. [Telecom ML](https://github.com/adityonugrohoid/telecom-ml-portfolio)
 **6 End-to-End ML Use Cases + Framework**
 
 Six independent implementations with domain-informed synthetic data generators embedding real telecom physics (SINR, Shannon capacity, congestion patterns), backed by 10+ years of network operations expertise. SHAP interpretability in every project.
