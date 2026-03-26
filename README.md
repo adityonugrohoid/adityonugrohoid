@@ -45,62 +45,7 @@ Progressive RAG evolution across 6 phases: from standalone Docker Compose to mul
 - **Infrastructure:** 7 containers on a single EC2 t3.small via Terraform IaC, Cloudflare SSL, nginx routing — consolidated from 21 containers after retiring v1/v2/v3 stacks
 - **Live:** [agentlens.adityonugroho.com](https://agentlens.adityonugroho.com/)
 
-&nbsp;
-
-![Fine-Tuning, RAG & Research](https://img.shields.io/badge/Fine--Tuning,_RAG_%26_Research-2d3436?style=for-the-badge)
-
-### 5. [Spatial LLM Fine Tuning](https://github.com/search?q=user%3Aadityonugrohoid+spatial-llm+OR+voxel-architect&type=repositories)
-**+325% Spatial Accuracy via QLoRA Memorization**
-
-Fine-tuned a 1.2B model to achieve +325% improvement on spatial coordinate tasks (avg IoU 0.139 to 0.590) using a memorization training strategy that produces 4 perfect-score letters and 18/26 above 0.5 IoU. Model selection driven by quantified thinking-loop failure rates across model families, not benchmark scores alone.
-
-- **[Spatial LLM](https://github.com/adityonugrohoid/spatial-llm):** QLoRA r=32 on 4-bit NF4, 520 examples, 30 epochs, train loss 0.005 (99.84% accuracy), full pipeline from training to GGUF conversion to Ollama registration, 731 MB model
-- **[Voxel Architect](https://github.com/adityonugrohoid/voxel-architect):** Agentic voxel builder where an LLM constructs 3D structures in a 16x16x16 grid using tool calling, with model selection and parsing strategies backed by data from 1,792 research runs across 32 models
-
-
-### 6. [Open Layer Standard](https://github.com/search?q=user%3Aadityonugrohoid+open-layer+OR+ollama-tool-calling-research+OR+ollama-catalog&type=repositories)
-**LLM Inference I/O Standardization + Tool Calling Research**
-
-Spec-first approach to LLM provider normalization with conformance tests proving 12/12 models pass after adapter normalization. Paired with a tool-calling benchmark across 32 models (1,792 runs) revealing that model size does not predict tool-calling quality, and a zero-download model catalog of 392 Ollama models via OCI registry blob inspection.
-
-- **[Open Layer](https://github.com/adityonugrohoid/open-layer):** 8 JSON schemas, 66 conformance tests per model, 3 provider adapters (Nvidia, DeepSeek, Groq) normalizing thinking token formats and usage reporting into a single contract
-- **[Ollama Tool Calling Research](https://github.com/adityonugrohoid/ollama-tool-calling-research):** 60 scored checks per model across 4 flag combinations; 10/32 achieve perfect scores; ministral-3:3b (3B) matches 1T+ models; key finding: streaming degrades tool calling and never improves it
-- **[Ollama Catalog](https://github.com/adityonugrohoid/ollama-catalog):** 392 models from 3 sources (Cloud API, OCI Registry, Local) with capability detection (tools, vision, thinking) from template blob patterns, zero model weight downloads
-
-
-### 7. [pAIjo RAG](https://github.com/adityonugrohoid/pAIjo-rag)
-**Islamic Knowledge Retrieval for the Indonesian Muslim Community**
-
-Retrieval backbone for pAIjo, a WhatsApp/Telegram-based Islamic knowledge assistant. Collaboration with [Ainun Najib](https://github.com/ainunnajib). The core constraint: fabricating or misattributing Islamic quotes is a critical failure mode, so RAG grounds every response in verified scholarly content.
-
-- 68 indexed knowledge points across 4 categories (NU traditions, Ramadan, fiqih, fatwa), sub-100ms retrieval, dual embedding backend (local MiniLM 384-dim vs. OpenAI 1536-dim)
-
-
-### 8. [RAG Systems & Local LLM Infrastructure](https://github.com/search?q=user%3Aadityonugrohoid+enterprise-rag-platform+OR+rag-operator-console+OR+ollama-multi-llm-server+OR+ollama-runtime&type=repositories)
-**Enterprise RAG + Phased Local LLM Stack**
-
-Enterprise RAG with multi-provider LLM support and PII redaction, plus a phased local LLM stack sharing a single Ollama runtime via a common Docker network.
-
-- **[Enterprise RAG Platform](https://github.com/adityonugrohoid/enterprise-rag-platform):** 4-microservice architecture, 5 LLM providers (Ollama, OpenAI, Anthropic, Azure, Vertex AI), PII detection with automatic redaction, Prometheus monitoring
-- **[RAG Operator Console](https://github.com/adityonugrohoid/rag-operator-console):** 4-layer PromptAssembler with token budgeting (4096 tokens), operator debugging UI for prompt assembly and chunk attribution
-- **[Ollama Multi-LLM Server](https://github.com/adityonugrohoid/ollama-multi-llm-server):** Multi-model hot-swap, side-by-side comparison, 3-tier model selection
-- **[Ollama Runtime](https://github.com/adityonugrohoid/ollama-runtime):** Shared GPU runtime on dedicated Docker network, centralized model storage, lifecycle-independent from downstream phases
-
-&nbsp;
-
-![Telecom AI/ML](https://img.shields.io/badge/Telecom_AI%2FML-2d3436?style=for-the-badge)
-
-### 9. [TRINITY Operations Suite](https://github.com/search?q=user%3Aadityonugrohoid+incident-commander+OR+noc-oracle+OR+net-ops-agent&type=repositories)
-**AI-Powered Network Operations: Observe -> Decide -> Act**
-
-Three-component AI system for reducing MTTR in NOC workflows, each mapping to one phase of the operational decision cycle.
-
-- **[Incident Commander](https://github.com/adityonugrohoid/incident-commander):** Tumbling window batching (5s) with async ingestion at 500+ logs/sec, Pydantic-enforced structured outputs via Gemini 2.0 Flash Lite
-- **[NOC-Oracle](https://github.com/adityonugrohoid/noc-oracle):** RAG with hybrid search (vector + regex keyword boosting) for exact error code matching, hallucination trap toggle showing ungrounded vs. RAG-verified answers
-- **[Net-Ops Agent](https://github.com/adityonugrohoid/net-ops-agent):** Reasoning-action separation with human-in-the-loop approval gate, deterministic function calling from pre-defined toolbelt
-
-
-### 10. [Telecom ML](https://github.com/search?q=user%3Aadityonugrohoid+telecom-ml+OR+telecom-churn+OR+telecom-root-cause+OR+telecom-anomaly+OR+telecom-capacity+OR+telecom-network-optimization&type=repositories)
+### 5. [Telecom ML](https://github.com/search?q=user%3Aadityonugrohoid+telecom-ml+OR+telecom-churn+OR+telecom-root-cause+OR+telecom-anomaly+OR+telecom-capacity+OR+telecom-network-optimization&type=repositories)
 **6 End-to-End ML Use Cases + Framework**
 
 Six independent implementations with domain-informed synthetic data generators embedding real telecom physics (SINR, Shannon capacity, congestion patterns), backed by 10+ years of network operations expertise. SHAP interpretability in every project.
@@ -115,38 +60,6 @@ Six independent implementations with domain-informed synthetic data generators e
 | Network Optimization | RL | Q-Learning | +61% vs random |
 
 - **[Telecom ML Framework](https://github.com/adityonugrohoid/telecom-ml-framework):** 6 production-ready project templates with domain-informed data generator patterns, temporal leakage prevention, and unified standards
-
-
-### 11. [Telecom Digital Twin + MLOps](https://github.com/search?q=user%3Aadityonugrohoid+telecom-digital-twin+OR+telecom-qoe-analytics&type=repositories)
-**Synthetic Generation -> Model Training -> Strategic Insights**
-
-Deterministic multi-table generator (50K users, 2K cells, ~5.6M sessions) with cascade-based seeding for bit-exact reproducibility, feeding a six-phase analytics pipeline.
-
-- **[Digital Twin](https://github.com/adityonugrohoid/telecom-digital-twin):** 7-step pipeline with referential integrity validation, Parquet columnar storage, configurable QoE noise (R-squared ~0.72-0.85)
-- **[QoE Analytics](https://github.com/adityonugrohoid/telecom-qoe-analytics):** R-squared=0.7247 (XGBoost), ROC-AUC=0.9645 (LightGBM), Cohen's d=-2.12 congestion effect, Optuna + SHAP
-
-&nbsp;
-
-![Other Work](https://img.shields.io/badge/Other_Work-2d3436?style=for-the-badge)
-
-### 12. [Google GenAI Platform](https://github.com/search?q=user%3Aadityonugrohoid+google-cloud-ai-studio+OR+google-ai-studio&type=repositories) LIVE
-
-- 3-step interior design render pipeline (text -> sketch -> render) deployed on **[Cloud Run](https://google-cloud-ai-studio-1099058340933.us-central1.run.app)** (Streamlit + Vertex AI) and **[Vercel](https://adityolab-ai-studio.vercel.app/)** (Next.js 14), comparing gemini-2.5-flash-image vs gemini-3-pro-image-preview for sketch-to-render fidelity
-
-
-### 13. [Observability & Agent Frameworks](https://github.com/adityonugrohoid/openclaw-dashboard)
-
-- OpenClaw Dashboard: zero-build SPA (FastAPI + Tailwind CDN + Alpine.js) with 7 views covering agent sessions, configuration, security audit, and system resources, purpose-built with intelligent data filtering and glassmorphism UI
-
-
-### 14. [Trading & Fintech](https://github.com/search?q=user%3Aadityonugrohoid+polymarket-agent+OR+trailing-edge+OR+ratu+OR+binance-colo-research&type=repositories)
-
-- 7 repos: autonomous LLM trading agent with 3-model council and 55 tests, async Binance bot with Ed25519 auth and systemd deployment, FIX 4.4 market making (3 sessions), REST analytics (7 endpoints), on-chain whale tracking (6 chains), DEX pair scanning (4 chains), co-location latency research (4.4x improvement from Tokyo VPS)
-
-
-### 15. [VPS Deploy Playbook](https://github.com/adityonugrohoid/vps-deploy-playbook)
-
-- 8-chapter production playbook: 21+ containers on one VPS, 2-tier image layering (7x disk reduction), shared ChromaDB saving ~10GB RAM, 30-second selective deploys, full lifecycle from SSH hardening through CI/CD with GitHub Actions
 
 &nbsp;
 
