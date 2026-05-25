@@ -1,67 +1,59 @@
-# Hi, I'm Adityo Nugroho
+# Adityo Nugroho
 
-**AI Engineer - Fine-Tuning, RAG, Computer Vision, ML Infrastructure**
+**Platform and ML Infrastructure Engineer building production AI systems, on 18 years of telecom network performance at Huawei**
 
-> 18 years optimizing telecom networks at Huawei. Now I build AI systems shaped by knowing what breaks on live networks - from fine-tuning 270M models that beat 120B on tool calling, to multi-agent RAG with no framework dependencies, to scale-to-zero GPU inference on Kubernetes.
+> Multi-agent systems on Google Cloud. Scale-to-zero GPU inference on Kubernetes. Terraform on AWS. Fine-tuned specialist models for edge devices.
 
 &nbsp;
 
 ![Featured Projects](https://img.shields.io/badge/Featured_Projects-2d3436?style=for-the-badge)
 
-### 1. [CV Pipeline - Construction Blueprint Analysis](https://github.com/adityonugrohoid/cv-pipeline)
-**4-Phase Progressive Detection: Shape → OCR → YOLO → Orchestrator**
+### 1. [NetPulse AI - Multi-Agent Telecom Ops](https://github.com/adityonugrohoid/hackathon-telecom-ops) LIVE
+**Four ADK agents turn a customer complaint into a triaged NOC incident ticket in under 30 seconds**
 
-Four independent detection phases feeding a fault-tolerant orchestrator for construction blueprint analysis. Classical CV (contour + color segmentation), OCR (Tesseract with preprocessing), and YOLOv8n fine-tuned on synthetic data - each phase runs independently with graceful failure isolation so partial results are preserved even when one detector fails.
+A Google ADK `SequentialAgent` orchestrates four `LlmAgent` sub-agents on Gemini (Vertex AI), collapsing the manual NOC workflow of correlating network events, call detail records, and ticketing into one natural-language step. Every LLM call routes through a 4-attempt model-failover ladder shown live in the UI, so a rate-limited model is swapped for the next one on screen instead of failing the request.
 
-- 66 tests, mAP@50 0.992 (5 construction symbol classes), 200 synthetic training images, per-stage timing and error capture, FastAPI async upload server, Docker support
+- **Top 100** of thousands at the Google Cloud Gen AI Academy APAC 2026 (Cohort 1); the BigQuery + AlloyDB pilot now runs zero-idle-cost on bundled SQLite, swappable back through one MCP Toolbox `tools.yaml` line, live on Cloud Run at [netpulse-ui.run.app](https://netpulse-ui-670100779564.asia-southeast2.run.app/)
 
-### 2. [Edge MCP Caller - SLM Specialist Fine Tuning](https://github.com/search?q=user%3Aadityonugrohoid+edge-mcp-caller+OR+nim-explorer&type=repositories)
-**270M Model Beats 120B on Tool Calling at 32x Fewer Tokens**
+### 2. [Scale-to-Zero GPU Inference](https://github.com/adityonugrohoid/gpu-autoscale-inference)
+**Production GPU inference on Kubernetes that costs $0 when idle**
 
-Specialist fine-tuning that bakes tool definitions into model weights via LoRA r=128 on Gemma 3 270M, achieving 99.5% accuracy across 14 tools while using 32x fewer prompt tokens than schema-in-prompt baselines. The 291 MB model (Q8_0 GGUF) runs at 153ms avg latency on consumer hardware, including phones and Raspberry Pi.
+Two-layer autoscaling: KEDA watches Redis queue depth for 0-to-N pod scaling while the GKE Cluster Autoscaler provisions and deprovisions GPU VMs on pending pod scheduling. vLLM serves with continuous batching; model weights persist on a PVC and image layers pre-cache via Secondary Boot Disk, cutting cold start about 45% (9m20s to 5m9s).
 
-- **[Edge MCP Caller](https://github.com/adityonugrohoid/edge-mcp-caller):** 418/420 eval accuracy, 14,033 training examples, 14 tools across 2 MCP servers, trained on single RTX 4060 (8GB VRAM), no accuracy degradation scaling from 3 to 14 tools
-- **[NIM Explorer](https://github.com/adityonugrohoid/nim-explorer):** Machine-readable catalog of 107 Nvidia NIM models with automated capability probing (tool calling, JSON mode, thinking) via live endpoint testing
+- TTFT p95 ~140-200ms warm, 12-panel Grafana dashboard (Prometheus + NVIDIA DCGM), Locust load testing, true scale-to-zero at both pod and node level
 
+### 3. [Edge MCP Caller - 270M Tool-Calling Specialist](https://github.com/adityonugrohoid/edge-mcp-caller)
+**A 270M model that beats generalist function-callers by baking tool knowledge into its weights**
 
-### 3. [K8s FinOps Explore](https://github.com/search?q=user%3Aadityonugrohoid+gpu-autoscale-inference+OR+vllm-explorer&type=repositories)
-**Scale-to-Zero GPU Inference on GKE**
+LoRA (r=128) fine-tuning on Gemma 3 270M moves all 14 tool definitions out of the prompt and into the weights: a ~20-token query goes in, a JSON tool call comes out, regardless of tool count. The result is 99.5% accuracy at 32x fewer prompt tokens than schema-in-prompt baselines, in a 291 MB Q8_0 GGUF that runs on phones, laptops, and Raspberry Pi.
 
-Production GPU inference platform that costs $0 when idle. Two-layer autoscaling: KEDA watches Redis queue depth for pod-level 0-to-N scaling, while GKE Cluster Autoscaler provisions GPU VMs on pending pod scheduling. Cold start optimized from ~9m20s to ~5m9s (45% reduction) with PVC model weight caching and Secondary Boot Disk for container images.
+- Trained on a single consumer GPU (RTX 4060, 8GB VRAM): 418/420 eval accuracy, 14,033 training examples, 14 tools across 2 MCP servers, 153ms avg latency
 
-- **[GPU Autoscale Inference](https://github.com/adityonugrohoid/gpu-autoscale-inference):** vLLM with continuous batching, TTFT p95 ~140-200ms warm, 12-panel Grafana dashboard (Prometheus + NVIDIA DCGM), Locust load testing, $0 cost when idle
-- **[vLLM Explorer](https://github.com/adityonugrohoid/vllm-explorer):** Systematic API surface probing that drove model selection (Qwen2.5-1.5B) and parameter tuning via TTFT + tokens/sec benchmarks
+### 4. [AgentLens on AWS - Infrastructure-as-Code](https://github.com/adityonugrohoid/agentlens-infrastructure) LIVE
+**The public Terraform and Docker deployment behind a framework-free multi-agent RAG system**
 
+AgentLens is a streaming pipeline debugger for multi-agent RAG, coordinating four roles (Retrieval Agent, Grader, Quality Judge, Fallback) across a 4-service FastAPI stack. This repo is the infrastructure-as-code only (app source stays private), so an infra reviewer can verify the full production architecture without app-repo access: Terraform provisions VPC, EC2 t3.small, and Elastic IP in us-east-1, behind a 7-container Docker Compose stack, path-based nginx, and Cloudflare edge SSL.
 
-### 4. [AgentLens - Agentic RAG Portfolio](https://agentlens.adityonugroho.com/) LIVE
-**Multi-Agent RAG Built From First Principles**
+- One-command deploy and teardown over SSH, Ollama Cloud API (no GPU on EC2), ChromaDB vector store, systemd boot automation, live at [agentlens.adityonugroho.com](https://agentlens.adityonugroho.com/)
 
-Progressive RAG evolution across 6 phases: from standalone Docker Compose to multi-agent orchestration to AWS serverless, with the same 4-layer token-budgeted PromptAssembler preserved identically across every deployment. No LangGraph, LlamaIndex, CrewAI, or AutoGen. The final phase features two autonomous agents coordinating via retry feedback loops with a 98 KB zero-dependency pipeline debugger.
+### 5. [CV Pipeline - Construction Blueprint Analysis](https://github.com/adityonugrohoid/cv-pipeline)
+**Four independent detection phases feeding a fault-tolerant orchestrator**
 
-- **Multi-Agent Pipeline:** ReAct reasoning loop with hybrid retrieval (vector + BM25), Quality Judge that evaluates chunks and retries with targeted feedback, per-role model selection across 4 pipeline stages
-- **Evolution:** v0 (25 tests, Docker Compose, 7 services) -> v1 (section-aware chunking) -> v2 (69 tests, agentic ReAct) -> v3 (multi-agent with inter-agent feedback) -> AgentLens (263 tests, 5-service microservices, NDJSON streaming debugger)
-- **Infrastructure:** 7 containers on a single EC2 t3.small via Terraform IaC, Cloudflare SSL, nginx routing — consolidated from 21 containers after retiring v1/v2/v3 stacks
-- **Live:** [agentlens.adityonugroho.com](https://agentlens.adityonugroho.com/)
+Automates construction blueprint takeoffs by composing three independent CV modules (contour-based shape detection, Tesseract OCR with preprocessing, and a YOLOv8n model fine-tuned on synthetic symbols) into a multi-stage orchestrator. Each phase returns a typed failure object instead of aborting, so a first-run user without trained YOLO weights still gets shape and OCR results. Multi-page PDFs go in, structured JSON takeoff reports come out over a FastAPI endpoint.
 
-### 5. [Telecom ML](https://github.com/adityonugrohoid/telecom-ml-portfolio)
-**6 End-to-End ML Use Cases + Framework**
+- 66 passing tests across 4 phases, mAP@50 0.992 on 5 synthetic construction symbol classes, YOLOv8n fine-tuned 20 epochs, FastAPI `POST /analyze` plus CLI
 
-Six independent implementations with domain-informed synthetic data generators embedding real telecom physics (SINR, Shannon capacity, congestion patterns), backed by 10+ years of network operations expertise. SHAP interpretability in every project.
+### 6. [Telecom ML Portfolio](https://github.com/adityonugrohoid/telecom-ml-portfolio)
+**Six end-to-end telecom ML projects, each on synthetic data with embedded network physics**
 
-| Use Case | ML Type | Algorithm | Result |
-|:---------|:--------|:----------|:-------|
-| Churn Prediction | Binary Classification | XGBoost | AUROC: 0.86 |
-| Root Cause Analysis | Multi-class Classification | XGBoost | Acc@1: 0.91 |
-| Anomaly Detection | Unsupervised | Isolation Forest | F1: 0.70 |
-| QoE Prediction | Regression | LightGBM | RMSE: 0.45 |
-| Capacity Forecasting | Time-Series | LightGBM | MAPE: 14.5% |
-| Network Optimization | RL | Q-Learning | +61% vs random |
+Six self-contained projects spanning classification, regression, time-series, and reinforcement learning. Most ML demos treat telecom as generic tabular data; here each project hand-crafts synthetic data with embedded telecom physics (temporal correlation, spatial clustering, equipment failure signatures), then runs the full paradigm end-to-end from data generation through feature engineering, training, evaluation, and business-insight translation. The repo is an index; source lives in six child repos.
 
-- **[Telecom ML Framework](https://github.com/adityonugrohoid/telecom-ml-framework):** 6 production-ready project templates with domain-informed data generator patterns, temporal leakage prevention, and unified standards
+- Churn AUROC 0.86, RCA Acc@1 0.91, Anomaly F1 0.70, QoE RMSE 0.45, Capacity MAPE 14.5%, Network Optimization +61% vs random
 
 &nbsp;
 
 ![Connect](https://img.shields.io/badge/Connect-2d3436?style=for-the-badge)
 
+* **Location:** Jakarta, Indonesia (UTC+7), open to remote
 * **LinkedIn:** [linkedin.com/in/adityonugrohoid](https://linkedin.com/in/adityonugrohoid)
 * **Email:** [adityo.nugroho.id@gmail.com](mailto:adityo.nugroho.id@gmail.com)
