@@ -1,6 +1,6 @@
 # Adityo Nugroho
 
-**AI Infrastructure Engineer shipping production systems, on 18 years of telecom network performance at Huawei**
+**AI Engineer shipping production systems, on 18 years of telecom network performance at Huawei**
 
 > Multi-agent systems on Google Cloud. Scale-to-zero GPU inference on Kubernetes. Terraform on AWS. Fine-tuned specialist models for edge devices.
 
