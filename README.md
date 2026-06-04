@@ -32,13 +32,13 @@ LoRA (r=128) fine-tuning on Gemma 3 270M moves all 14 tool definitions out of th
 - **Trained on a single consumer GPU** (RTX 4060, 8GB VRAM): 418/420 eval accuracy from 14,033 training examples
 - **Fully local, zero API cost**: 14 tools across 2 MCP servers at 153ms average latency
 
-### 4. [AgentLens on AWS - Infrastructure-as-Code](https://github.com/adityonugrohoid/agentlens-infrastructure) LIVE
+### 4. [AgentLens on AWS - Infrastructure-as-Code](https://github.com/adityonugrohoid/agentlens-infrastructure)
 **The public Terraform and Docker deployment behind a framework-free multi-agent RAG system**
 
 AgentLens is a streaming pipeline debugger for multi-agent RAG, coordinating four roles (Retrieval Agent, Grader, Quality Judge, Fallback) across a 4-service FastAPI stack. This repo is the infrastructure-as-code only (app source stays private), so an infra reviewer can verify the full production architecture without app-repo access: Terraform provisions VPC, EC2 t3.small, and Elastic IP in us-east-1, behind a 7-container Docker Compose stack, path-based nginx, and Cloudflare edge SSL.
 
 - **One-command deploy and teardown** over SSH, with systemd boot automation re-creating the full stack across reboots
-- **Offloaded inference**: Ollama Cloud API (no GPU on EC2) plus a ChromaDB vector store, live at [agentlens.adityonugroho.com](https://agentlens.adityonugroho.com/)
+- **Offloaded inference**: Ollama Cloud API (no GPU on EC2) plus a ChromaDB vector store; redeployable on demand to [agentlens.adityonugroho.com](https://agentlens.adityonugroho.com/) (demo currently offline)
 
 ### 5. [CV Pipeline - Construction Blueprint Analysis](https://github.com/adityonugrohoid/cv-pipeline)
 **Three independent detection phases feeding a fault-tolerant orchestrator**
