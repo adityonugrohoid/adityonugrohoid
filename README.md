@@ -1,65 +1,69 @@
 # Adityo Nugroho
 
-**AI Engineer shipping production systems and leading AI transformation, on 18 years of telecom network performance at Huawei**
+**AI Engineer: system design of agentic AI, LLM serving and MLOps for telecom operations, on 18 years in mobile network performance**
 
-> Multi-agent systems on Google Cloud. Solutions architecture across AWS, Azure, and GCP. Scale-to-zero GPU inference on Kubernetes. Fine-tuned edge models and custom MCP servers.
+> Architecture first: agent systems, data platforms, model serving and evaluation gates, each built end to end and measured. Telecom operations are the proving ground.
 
 &nbsp;
 
 ![Featured Projects](https://img.shields.io/badge/Featured_Projects-2d3436?style=for-the-badge)
 
-### 1. [NetPulse AI - Multi-Agent Telecom Ops](https://github.com/adityonugrohoid/hackathon-telecom-ops) LIVE
-**Multi-agent system on Google Cloud that turns a customer complaint into a triaged NOC incident ticket in under 30 seconds**
+### 1. [NetPulse AI - Multi-Agent Network Operations](https://github.com/adityonugrohoid/hackathon-telecom-ops) LIVE
+**Four agents on Google Cloud turn a customer complaint into a triaged NOC incident ticket in a measured 10 to 21 seconds**
 
-A Google ADK `SequentialAgent` orchestrates four `LlmAgent` sub-agents on Gemini (Vertex AI), collapsing the manual NOC workflow of correlating network events, call detail records, and ticketing into one natural-language step. Every LLM call routes through a 4-attempt model-failover ladder shown live in the UI, so a rate-limited model is swapped for the next one on screen instead of failing the request.
+A Google ADK `SequentialAgent` runs four Gemini sub-agents on Vertex AI. MCP Toolbox is the single data gateway, switching between SQLite, AlloyDB and BigQuery by configuration, and a four-attempt model-fallback ladder rides out Vertex AI quota contention, each attempt drawing on its own quota. Live on [Cloud Run](https://netpulse-ui-670100779564.asia-southeast2.run.app/); CI runs the failover self-tests.
 
-- **Top 100 of thousands** at the Google Cloud Gen AI Academy APAC 2026 (Cohort 1), live on Cloud Run at [netpulse-ui.run.app](https://netpulse-ui-670100779564.asia-southeast2.run.app/)
-- **Substrate-swappable by design**: the BigQuery + AlloyDB pilot now runs zero-idle-cost on bundled SQLite, swappable back through one MCP Toolbox `tools.yaml` line
+- **Selected Top 100** at Google Cloud Gen AI Academy APAC 2026 (Cohort 1)
+- **NetPulse Perf**, a private working prototype, runs the same design on a tier-1 Indonesian mobile operator's real weekly performance data (1.3M KPI rows) and was demoed to its operations team in July 2026, ahead of a proof of concept. It stays private because of that data.
 
-### 2. [Cloud Rosetta - One Workload Across AWS, Azure, and GCP](https://github.com/adityonugrohoid/cloud-rosetta)
-**Solutions architecture across AWS, Azure, and GCP: the same production workload built 1:1 on all three from a single cloud-neutral contract**
+### 2. [RAN Lakehouse - Data Foundation for Network Operations Agents](https://github.com/adityonugrohoid/ran-lakehouse)
+**3GPP performance files to a versioned KPI catalog and a semver API, with the failures of real operator pipelines planted and tested**
 
-One stateless HTTPS FastAPI service over managed PostgreSQL, with autoscaling, private networking, workload identity, and observability, specified once against a cloud-neutral contract and then implemented identically on AWS, Azure, and GCP. The deliverable is the comparison itself: a defensible three-cloud Bill of Quantities with every line-item cost delta explained, plus a per-cloud evidence pack that proves each requirement on live infrastructure. Built end to end as a self-directed, hands-on study.
+A synthetic Indonesian multi-vendor operator (4G LTE and 2G GSM, two vendor dialects) drops performance files every 15 minutes. A bronze-silver-gold pipeline on Iceberg (Lakekeeper) and DuckDB with dbt builds the catalog, and an HTTP API under a semver contract serves KPIs, topology, network planning (OR-Tools optimization) and a what-if simulator: the platform agents like NetPulse AI need.
 
-- **Defensible cost comparison**: a like-for-like three-cloud Bill of Quantities in one region, with every cost delta traced to a specific service line
-- **Keyless by construction**: workload identity on each cloud, checked against a V1-V9 acceptance rubric run on live infra and captured as a screenshot evidence pack
+- **Planted and tested**: late, renamed, missing and suspect files, reprocessing and lineage, each guarded by a test; cross-checked against a public Zenodo dataset (Pearson r 0.94 on LTE)
+- **151 tests**; one `docker compose` command runs the demo; CI runs the pipeline against the catalog
 
-### 3. [Scale-to-Zero GPU Inference](https://github.com/adityonugrohoid/gpu-autoscale-inference)
-**Scale-to-zero GPU inference on Kubernetes that costs $0 when idle**
+### 3. [Telecom MLOps - Drift-Gated Model Promotion for Six Use Cases](https://github.com/adityonugrohoid/telecom-mlops)
+**Validate the day's data, detect drift, retrain, and promote only past a margin calibrated against a no-change control run**
 
-Two-layer autoscaling: KEDA watches Redis queue depth for 0-to-N pod scaling while the GKE Cluster Autoscaler provisions and deprovisions GPU VMs on pending pod scheduling. vLLM serves with continuous batching; model weights persist on a PVC and image layers pre-cache via Secondary Boot Disk, cutting cold start 48% (11 to 5.6 min).
+Six use cases (churn, root cause, anomaly detection, QoE, capacity, network optimization) run on one contract-first loop; each owns its generator, schema and label delay. A candidate is promoted only when it beats the live model by twice the gain that retraining produces from noise alone.
 
-- **True scale-to-zero** at both the pod and node level, $0/hr when idle
-- **Full observability**: 12-panel Grafana dashboard (Prometheus + NVIDIA DCGM) plus Locust load testing
+- **Over a 180-day replay**, learned 6 real changes and refused every model retrained on a benign shift, with a full promotion audit trail
+- **125 tests**, strict typing; CI replays 14 days of all six use cases on every push
 
-### 4. [Edge MCP Caller - 270M Tool-Calling Specialist](https://github.com/adityonugrohoid/edge-mcp-caller)
-**A fine-tuned 270M edge model that beats generalist function-callers by baking tool knowledge into its weights**
+### 4. [Sionna Twin - Neural Network Radio Coverage Model](https://github.com/adityonugrohoid/sionna-twin-ops)
+**A U-Net that emulates the NVIDIA Sionna RT ray tracer at 1.55 dB error on unseen terrain, 133.5x faster per additional map**
 
-LoRA (r=128) fine-tuning on Gemma 3 270M moves all 14 tool definitions out of the prompt and into the weights: a ~20-token query goes in, a JSON tool call comes out, regardless of tool count. The result is 99.5% accuracy at 32x fewer prompt tokens than schema-in-prompt baselines, in a 291 MB Q8_0 GGUF that runs on phones, laptops, and Raspberry Pi.
+Ray-traced path-gain maps with measured uncertainty feed a versioned dataset contract (5,814 maps over 126/9/9 terrains), a PyTorch U-Net learns to predict them on terrain it has never seen, and a tilt and power search runs on the model. Limitations are stated, including a mesh diffraction gap in the tracer.
 
-- **Trained on a single consumer GPU** (RTX 4060, 8GB VRAM): 418/420 eval accuracy from 14,033 training examples
-- **Fully local, zero API cost**: 14 tools across 2 MCP servers at 153ms average latency
+- **1.55 dB** mean error against 3.13 and 3.84 dB for two classic propagation models; the search lands within 0.01 of the ray tracer's optimum in 68 to 71 of 72 cases, against 3 for a tilt rule of thumb and 15 for a fixed setting
+- **159 tests**, CI in 2.5 minutes; every headline number regenerated from committed records
 
-### 5. [Open Telegram Ops - Conversational Job-Costing](https://github.com/adityonugrohoid/open-telegram-ops)
-**A custom MCP server behind a Telegram bot: snap a receipt, get live project cost accountability**
+### 5. [Scale-to-Zero Inference - Two-Layer LLM Autoscaling on Kubernetes](https://github.com/adityonugrohoid/gpu-autoscale-inference)
+**Event-driven, two-layer scale-to-zero serving: zero idle cost at both the pod and the node level**
 
-Field workers photograph receipts in Telegram; an LLM-vision agent runs OCR to pull amount, vendor, and date, confirms over inline buttons, and writes a per-submitter expense to a SQLite ledger exposed through a custom MCP server. Managers query live budget-vs-actual and get matplotlib charts back in-chat. Built for a real telecom subcontractor whose paper-and-form expense tracking kept failing.
+KEDA scales vLLM pods on Redis queue depth, and the GKE Cluster Autoscaler scales the GPU node on pending pods. Cold start, the price of scale-to-zero, was measured and cut from about 11 to about 5.6 minutes by moving weights to a persistent volume and pre-caching the image on a secondary boot disk.
 
-- **Custom 6-tool MCP server** (set_budget, log_expense, query_spend, budget_status, budget_chart, export_ledger) over an async SQLite ledger, with a 37-test pytest suite
-- **Self-hosted agent**: OpenClaw runtime on Azure OpenAI vision, Docker Compose deployment; the Azure pilot is archived and production has since moved to AWS
+- **Full cycle recorded**: 1,762 requests end to end, including a Spot node loss and recovery
+- **Observability**: 12-panel Grafana over Prometheus and NVIDIA DCGM, Locust load tests; CI lints the manifests; 30 stars, 10 forks
 
-### 6. [Telecom ML Portfolio](https://github.com/adityonugrohoid/telecom-ml-portfolio)
-**Six end-to-end telecom ML projects, each on synthetic data with embedded network physics**
+### 6. [Edge MCP Caller - Tool Knowledge in Model Weights](https://github.com/adityonugrohoid/edge-mcp-caller)
+**A 270M model that carries 14 MCP tool definitions in its weights: a 20-token query returns a JSON tool call**
 
-Six self-contained projects spanning classification, regression, time-series, and reinforcement learning. Most ML demos treat telecom as generic tabular data; here each project hand-crafts synthetic data with embedded telecom physics (temporal correlation, spatial clustering, equipment failure signatures), then runs the full paradigm end-to-end from data generation through feature engineering, training, evaluation, and business-insight translation. The repo is an index; source lives in six child repos.
+LoRA fine-tuning of Gemma 3 270M moves all 14 tool definitions (filesystem and git) out of the prompt and into the weights, proving the method on general tools.
 
-- **Supervised**: Churn AUROC 0.86, RCA Acc@1 0.91, QoE RMSE 0.45, Capacity MAPE 14.5%
-- **Unsupervised + RL**: Anomaly F1 0.70, Network Optimization +61% vs random
+- **99.5% accuracy** on 420 held-out calls, against 41.7% for GPT-OSS 120B and 13.6% for FunctionGemma with schemas in the prompt; 32x fewer prompt tokens; 153 ms on a laptop
+- **Trained on one 8 GB consumer GPU** from 14,033 examples; the weights ship as a 291 MB GGUF release, and CI runs all 14 tools against real MCP servers on CPU
+
+&nbsp;
+
+Code in these repos is written with Claude Code under the author's direction, one gated pull request at a time; the author owns the architecture, the data contracts and the evaluation design.
 
 &nbsp;
 
 ![Connect](https://img.shields.io/badge/Connect-2d3436?style=for-the-badge)
 
-* **Location:** Jakarta, Indonesia (UTC+7), open to remote
-* **LinkedIn:** [linkedin.com/in/adityonugrohoid](https://linkedin.com/in/adityonugrohoid)
-* **Email:** [adityo.nugroho.id@gmail.com](mailto:adityo.nugroho.id@gmail.com)
+- **Location:** Surabaya, Indonesia (UTC+7), open to remote and relocation
+- **LinkedIn:** [linkedin.com/in/adityonugrohoid](https://linkedin.com/in/adityonugrohoid)
+- **Email:** [adityo.nugroho.id@gmail.com](mailto:adityo.nugroho.id@gmail.com)
