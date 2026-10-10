@@ -9,14 +9,16 @@
 ![Featured Projects](https://img.shields.io/badge/Featured_Projects-2d3436?style=for-the-badge)
 
 ### 1. [NetPulse AI - Multi-Agent Network Operations](https://github.com/adityonugrohoid/hackathon-telecom-ops) LIVE
-<a href="https://github.com/adityonugrohoid/hackathon-telecom-ops"><img align="right" width="300" src="media/netpulse-ai.png" alt="NetPulse AI: the customer-impact card and the incident ticket the fourth agent wrote"></a>
+<a href="https://github.com/adityonugrohoid/hackathon-telecom-ops"><img align="right" width="300" src="media/netpulse-ai.png" alt="NetPulse AI: the four agent cards of one run, with the Network Investigator and CDR Analyzer details open showing their MCP Toolbox queries, results and findings"></a>
 
 **Four agents on Google Cloud turn a customer complaint into a triaged NOC incident ticket in a measured 10 to 21 seconds**
 
 A Google ADK `SequentialAgent` runs four Gemini sub-agents on Vertex AI. MCP Toolbox is the single data gateway, switching between SQLite, AlloyDB and BigQuery by configuration, and a four-attempt model-fallback ladder rides out Vertex AI quota contention, each attempt drawing on its own quota. Live on [Cloud Run](https://netpulse-ui-670100779564.asia-southeast2.run.app/); CI runs the failover self-tests.
 
 - **Selected Top 100** at Google Cloud Gen AI Academy APAC 2026 (Cohort 1)
-- **NetPulse Perf**, a private working prototype, runs the same design on a tier-1 Indonesian mobile operator's real weekly performance data (1.3M KPI rows) and was demoed to its operations team in July 2026, ahead of a proof of concept. It stays private because of that data.
+- **NetPulse Perf**, a private working prototype, runs the same design on a tier-1 Indonesian mobile operator's real weekly performance data (1.3M KPI rows) and was demoed to its operations team in July 2026, ahead of a proof of concept.
+- **Each card is an audit trail** of the tool call the agent made, the rows that came back and the finding it handed to the next agent, streamed to the operator as it happens. The ticket at the end carries recommended NOC actions; a person picks one, and nothing executes on its own.
+- **Model failover in action**, the Response Formatter's badge reads 3.1 Flash-Lite, then 3.5 Flash-Lite during a Vertex quota squeeze mid-run. A four-attempt ladder swaps models instead of regions, since preview models are region-gated and each model carries its own quota.
 
 <br clear="all">
 
